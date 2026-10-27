@@ -11,10 +11,9 @@
 
   services.fwupd.enable = true;
 
-  # NOTE: previously pointed at a channel URL; flake-based autoUpgrade
-  # instead rebuilds from this repo's own flake. Update `flake` below if
-  # you push this repo to a remote and want upgrades to pull from there
-  # instead of the local checkout.
+  # Rebuilds nightly from this flake's committed lock file — it will not
+  # fetch newer packages on its own. Point `flake` at a pushed remote (with
+  # a timer that runs `nix flake update` first) for real nightly upgrades.
   system.autoUpgrade = {
     enable = true;
     dates = "*-*-* 04:00:00";

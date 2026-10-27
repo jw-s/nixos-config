@@ -18,5 +18,6 @@
     jq
     gnumake
     plan9port-wayland
+    containerlab # run via `sudo containerlab`/`sudo clab`, needs netns/veth privileges
   ];
 }

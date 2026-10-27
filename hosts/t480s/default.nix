@@ -13,11 +13,10 @@
     ../../modules/shell.nix
     ../../modules/gaming.nix
     ../../modules/virtualisation.nix
-    ../../modules/containerlab.nix
     ../../modules/users.nix
     ../../modules/packages.nix
     ../../modules/nix-settings.nix
   ];
 
-  networking.hostName = "nixos"; # unchanged from the original config; rename whenever convenient
+  networking.hostName = "nixos";
 }

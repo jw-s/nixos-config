@@ -2,9 +2,8 @@
   description = "Joel's NixOS configuration";
 
   inputs = {
-    # Pinned to the channel this machine was already on at migration time,
-    # so switching to flakes is a no-op rebuild. Bump deliberately later.
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05";
+    # Pinned to a known-good commit; bump deliberately with `nix flake update`.
+    nixpkgs.url = "github:NixOS/nixpkgs/da6dc0e7b26060f2f71ce3ef7088fb56ee44fa36";
 
     musnix = {
       url = "github:musnix/musnix";

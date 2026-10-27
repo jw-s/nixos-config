@@ -5,7 +5,7 @@
     isNormalUser = true;
     shell = pkgs.zsh;
     description = "Joel";
-    extraGroups = [ "networkmanager" "wheel" "clab_admins" "docker" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" ];
     packages = with pkgs; [
       google-chrome
       spotify

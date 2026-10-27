@@ -35,14 +35,12 @@
     };
   };
 
-  services.xserver.displayManager.gdm.enable = true;
+  services.displayManager.gdm.enable = true;
 
-  services.xserver = {
-    enable = true;
-    desktopManager.gnome.enable = true;
-  };
+  services.xserver.enable = true;
+  services.desktopManager.gnome.enable = true;
 
-  services.xserver.desktopManager.gnome.extraGSettingsOverrides = ''
+  services.desktopManager.gnome.extraGSettingsOverrides = ''
     [org/gnome/desktop/interface]
     font-antialiasing='rgba'
     font-hinting='full'
