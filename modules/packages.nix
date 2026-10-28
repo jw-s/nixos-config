@@ -19,5 +19,6 @@
     gnumake
     plan9port
     containerlab # run via `sudo containerlab`/`sudo clab`, needs netns/veth privileges
+    libnotify
   ];
 }
