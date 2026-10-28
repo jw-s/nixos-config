@@ -10,6 +10,10 @@
     meslo-lgs-nf # patched font recommended for powerlevel10k
   ];
 
+  environment.shellAliases = {
+    nbr = "sudo nixos-rebuild switch --flake ~/nixos-config#t480s";
+  };
+
   programs.zsh = {
     enable = true;
     enableCompletion = true;
